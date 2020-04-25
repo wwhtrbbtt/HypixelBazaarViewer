@@ -1,115 +1,148 @@
 {
 	"success": "Yes!",
 	"productIds": {
-		"Wheat": {
+		"wheat": {
 			"MerchantSellPrice": "1",
 			"MerchantBuyPrice": "2.33",
 			"NormalName": "WHEAT"
 		},
-		"Carrot": {
+		"carrot": {
 			"MerchantSellPrice": "1",
 			"MerchantBuyPrice": "2.33",
 			"NormalName": "CARROT"
 		},
-		"Potato": {
+		"potato": {
 			"MerchantSellPrice": "1",
 			"MerchantBuyPrice": "2.33",
 			"NormalName": "POTATO"
 		},
-		"Melon": {
+		"melon": {
 			"MerchantSellPrice": "0.5",
 			"MerchantBuyPrice": "2",
 			"NormalName": "MELON"
 		},
-		"SugarCane": {
+		"sugar cane": {
 			"MerchantSellPrice": "2",
 			"MerchantBuyPrice": "5",
 			"NormalName": "SUGAR_CANE"
 		},
-		"Pumpkin": {
+		"pumpkin": {
 			"MerchantSellPrice": "4",
 			"MerchantBuyPrice": "8",
 			"NormalName": "PUMPKIN"
 		},
-		"Cocoa Bean": {
+		"cocoa bean": {
 			"MerchantSellPrice": "3",
 			"MerchantBuyPrice": "5",
 			"NormalName": "COCOA_BEAN"
 		},
-		"Red Mushroom": {
+		"red mushroom": {
 			"MerchantSellPrice": "4",
 			"MerchantBuyPrice": "12",
 			"NormalName": "RED_MUSHROOM"
 		},
-		"Brown Mushroom": {
+		"brown mushroom": {
 			"MerchantSellPrice": "4",
 			"MerchantBuyPrice": "12",
 			"NormalName": "BROWN_MUSROOM"
 		},
-		"Sand": {
+		"sand": {
 			"MerchantSellPrice": "2",
 			"MerchantBuyPrice": "4",
 			"NormalName": "SAND"
 		},
-		"Coal": {
+		"coal": {
 			"MerchantSellPrice": "2",
 			"MerchantBuyPrice": "4",
 			"NormalName": "COAL"
 		},
-		"Iron Ingot": {
+		"iron ingot": {
 			"MerchantSellPrice": "3",
 			"MerchantBuyPrice": "6",
 			"NormalName": "IRON_INGOT"
 		},
-		"Gold Ingot": {
+		"gold ingot": {
 			"MerchantSellPrice": "4",
 			"MerchantBuyPrice": "7",
 			"NormalName": "GOLD_INGOT"
 		},
-		"Gravel": {
+		"gravel": {
 			"MerchantSellPrice": "3",
 			"MerchantBuyPrice": "6",
 			"NormalName": "GRAVEL"
 		},
-		"Cobblestone": {
+		"cobblestone": {
 			"MerchantSellPrice": "1",
 			"MerchantBuyPrice": "3",
 			"NormalName": "COBBLESTONE"
 		},
-		"Ice": {
+		"ice": {
 			"MerchantSellPrice": "0.5",
 			"MerchantBuyPrice": "1",
 			"NormalName": "ICE"
 		},
-		"Packed Ice": {
+		"packed ice": {
 			"MerchantSellPrice": "4.5",
 			"MerchantBuyPrice": "9",
 			"NormalName": "PACKED_ICE"
 		},
-		"Raw Fish": {
+		"raw fish": {
 			"MerchantSellPrice": "6",
 			"MerchantBuyPrice": "20",
 			"NormalName": "RAW_FISH:1"
 		},
-		"Raw Salmon": {
+		"raw salmon": {
 			"MerchantSellPrice": "10",
 			"MerchantBuyPrice": "30",
 			"NormalName": "RAW_FISH:2"
 		},
-		"Pufferfish": {
+		"pufferfish": {
 			"MerchantSellPrice": "15",
 			"MerchantBuyPrice": "40",
 			"NormalName": "RAW_FISH:3"
 		},
-		"Oak Log": {
+		"oak log": {
 			"MerchantSellPrice": "2",
 			"MerchantBuyPrice": "5",
 			"NormalName": "LOG"
 		},
-		"Birch Log": {
+		"birch log": {
 			"MerchantSellPrice": "2",
 			"MerchantBuyPrice": "5",
 			"NormalName": "LOG:1"
+		},
+		"spruce log": {
+			"MerchantSellPrice": "2",
+			"MerchantBuyPrice": "5",
+			"NormalName": "LOG:2"
+		},
+		"dark oak log": {
+			"MerchantSellPrice": "2",
+			"MerchantBuyPrice": "5",
+			"NormalName": "LOG:3"
+		},
+		"acacia log": {
+			"MerchantSellPrice": "2",
+			"MerchantBuyPrice": "5",
+			"NormalName": "LOG_2"
+		},
+		"jungle log": {
+			"MerchantSellPrice": "2",
+			"MerchantBuyPrice": "5",
+			"NormalName": "LOG_2:1"
+		},
+		"rotten flesh": {
+			"MerchantSellPrice": "2",
+			"MerchantBuyPrice": "8",
+			"NormalName": "ROTTEN_FLESH"
+		},
+		"bone": {
+			"MerchantSellPrice": "2",
+			"MerchantBuyPrice": "8",
+			"NormalName": "BONE"
 		}
+
+
+
 	}
 }
