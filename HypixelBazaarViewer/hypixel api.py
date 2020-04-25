@@ -28,7 +28,7 @@ print("""  ______ _      _____ __  __ __  __ ______ _____   _____
                                """)
 
  ########YOUR API KEY HERE!!##########
-ApiKey = "39eda60a-3b7c-4ecb-bc17-4d86d2e39af0"
+ApiKey = "YourApiKey!"
 
 
 #Product you wanna see?
