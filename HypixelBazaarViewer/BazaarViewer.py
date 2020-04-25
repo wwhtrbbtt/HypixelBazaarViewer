@@ -3,7 +3,9 @@ import json
 import string
 
 #every Bazaar product: https://api.hypixel.net/skyblock/bazaar/products?key=YourApiKey
-#nice spreadsheet with prices: https://docs.google.com/spreadsheets/d/1_ej-xLzpVEvrGmp3JOXRFC5B_gHwJPMpB3SYMC3dDDY/edit#gid=0
+#Thanks to ThisIsMyPassword for this spreadsheet
+#And thanks for every Betatester
+##nice spreadsheet with prices: https://docs.google.com/spreadsheets/d/1_ej-xLzpVEvrGmp3JOXRFC5B_gHwJPMpB3SYMC3dDDY/edit#gid=0
 print("""  ______ _      _____ __  __ __  __ ______ _____   _____ 
  |  ____| |    |_   _|  \/  |  \/  |  ____|  __ \ / ____|
  | |__  | |      | | | \  / | \  / | |__  | |__) | (___  
@@ -36,7 +38,7 @@ print("""  ______ _      _____ __  __ __  __ ______ _____   _____
     #Product you wanna see?
 print()
 print()
-Product = input("Product you want to see? For example: Wheat (Every word has to be capitalized cause i cant programm)\n")
+Product = input("Product you want to see? For example: Wheat\n")
 print("Ok, you want to see the product " + Product)
 ApiKey = input("Your ApiKey?\n")
 print("Ok, your ApiKey is:  " + ApiKey)
@@ -128,3 +130,7 @@ else:
     
         #Print every avaiable Product, remove #
 #for x in NPCPrices["productIds"]: print(x)
+print()
+print()
+print()
+print("Buy me VIP, IGN: flimmerkraft")
