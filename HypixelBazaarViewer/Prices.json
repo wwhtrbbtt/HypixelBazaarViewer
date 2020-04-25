@@ -140,6 +140,21 @@
 			"MerchantSellPrice": "2",
 			"MerchantBuyPrice": "8",
 			"NormalName": "BONE"
+		},
+		"string": {
+			"MerchantSellPrice": "3",
+			"MerchantBuyPrice": "10",
+			"NormalName": "STRING"
+		},
+		"slime ball": {
+			"MerchantSellPrice": "5",
+			"MerchantBuyPrice": "14",
+			"NormalName": "SLIME_BALL"
+		},
+		"gunpowder": {
+			"MerchantSellPrice": "4",
+			"MerchantBuyPrice": "10",
+			"NormalName": "GUNPOWDER"
 		}
 
 
