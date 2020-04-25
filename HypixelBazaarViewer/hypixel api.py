@@ -36,8 +36,8 @@ print()
 print()
 Product = input("Product you want to see? For example: Wheat (Every word has to be capitalized cause i cant programm)\n")
 print("Ok, you want to see the product " + Product)
-#ApiKey = input("Your ApiKey?\n")
-#print("Ok, your ApiKey is:  " + ApiKey)
+ApiKey = input("Your ApiKey?\n")
+print("Ok, your ApiKey is:  " + ApiKey)
 
 NormalPName = Product
 #MERSHANT PRICES
