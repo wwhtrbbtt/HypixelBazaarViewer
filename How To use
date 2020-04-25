@@ -1,5 +1,11 @@
 It uses the JSON and the REQUESTS packages, so you might have to install them by typing "pip3 install requests" and 
 "pip3 install Json" in your terminal. I only use a Mac, so there might be bugs if you use it on Windows.
+So, all the commands you might need:
+pip3 install requests
+pip3 install json
+pip3 install PyQt5==5.9.2
+
+
 
 To use it, you have to download the .py and the .JSON file. They have to be in the same folder. Then you navigate with your 
 Terminal to that folder (using "cd /folder/path" on mac, idk about windows. On mac you can just type cd and then drag the 
