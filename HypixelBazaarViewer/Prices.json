@@ -9,12 +9,12 @@
 		"carrot": {
 			"MerchantSellPrice": "1",
 			"MerchantBuyPrice": "2.33",
-			"NormalName": "CARROT"
+			"NormalName": "CARROT_ITEM"
 		},
 		"potato": {
 			"MerchantSellPrice": "1",
 			"MerchantBuyPrice": "2.33",
-			"NormalName": "POTATO"
+			"NormalName": "POTATO_ITEM"
 		},
 		"melon": {
 			"MerchantSellPrice": "0.5",
@@ -30,11 +30,6 @@
 			"MerchantSellPrice": "4",
 			"MerchantBuyPrice": "8",
 			"NormalName": "PUMPKIN"
-		},
-		"cocoa bean": {
-			"MerchantSellPrice": "3",
-			"MerchantBuyPrice": "5",
-			"NormalName": "COCOA_BEAN"
 		},
 		"red mushroom": {
 			"MerchantSellPrice": "4",
@@ -60,11 +55,6 @@
 			"MerchantSellPrice": "3",
 			"MerchantBuyPrice": "6",
 			"NormalName": "IRON_INGOT"
-		},
-		"gold ingot": {
-			"MerchantSellPrice": "4",
-			"MerchantBuyPrice": "7",
-			"NormalName": "GOLD_INGOT"
 		},
 		"gravel": {
 			"MerchantSellPrice": "3",
@@ -151,13 +141,50 @@
 			"MerchantBuyPrice": "14",
 			"NormalName": "SLIME_BALL"
 		},
-		"gunpowder": {
+		"enchanted cobblestone": {
+			"MerchantSellPrice": "160",
+			"MerchantBuyPrice": "999999",
+			"NormalName": "ENCHANTED_COBBLESTONE"
+		},
+		"enchanted coal": {
+			"MerchantSellPrice": "320",
+			"MerchantBuyPrice": "999999",
+			"NormalName": "ENCHANTED_COAL"
+		},
+		"enchanted charcoal": {
+			"MerchantSellPrice": "320",
+			"MerchantBuyPrice": "999999",
+			"NormalName": "ENCHANTED_CHARCOAL"
+		},
+		"enchanted coal block": {
+			"MerchantSellPrice": "51200",
+			"MerchantBuyPrice": "999999",
+			"NormalName": "ENCHANTED_COAL_BLOCK"
+		},
+		"enchanted iron": {
+			"MerchantSellPrice": "480",
+			"MerchantBuyPrice": "999999",
+			"NormalName": "ENCHANTED_IRON"
+		},
+		"enchanted iron block": {
+			"MerchantSellPrice": "76800",
+			"MerchantBuyPrice": "999999",
+			"NormalName": "ENCHANTED_IRON_BLOCK"
+		},
+		"gold ingot": {
 			"MerchantSellPrice": "4",
-			"MerchantBuyPrice": "10",
-			"NormalName": "GUNPOWDER"
+			"MerchantBuyPrice": "999999",
+			"NormalName": "GOLD_INGOT"
+		},
+		"enchanted gold": {
+			"MerchantSellPrice": "800",
+			"MerchantBuyPrice": "999999",
+			"NormalName": "ENCHANTED_GOLD"
+		},
+		"enchanted gold block": {
+			"MerchantSellPrice": "102400",
+			"MerchantBuyPrice": "999999",
+			"NormalName": "ENCHANTED_GOLD_BLOCK"
 		}
-
-
-
 	}
 }
