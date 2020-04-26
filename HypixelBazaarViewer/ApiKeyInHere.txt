@@ -1,0 +1,1 @@
+type your Apikey here, instead of this. You get it by typing /api on the hypixel server
