@@ -28,12 +28,12 @@ i = 0
 while i < 10:
 
     print("Do you want to see the prices of every produkt, or one specific product? Or do you want to quit?")
-    answer = input("Enter 'all', 'specific' or 'quit': ")
-    if answer == "all":
-        print("ok, you get the prices of every product:")
+    answer = input("Enter 'best margin', 'specific product' or 'quit': ")
+    if answer == "best margin":
+        print("ok, you will get the product with the best profit margin:")
         import EveryProdukt
         # Do this.
-    elif answer == "specific":
+    elif answer == "specific product":
         # Do that.
         print("ok, you will get the price of a specific product:")
         import SpecificProduct
