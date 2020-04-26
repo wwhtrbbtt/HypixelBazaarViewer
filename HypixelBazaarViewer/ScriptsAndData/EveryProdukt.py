@@ -57,8 +57,8 @@ for x in (NPCPrices["productIds"]):
 
     #printing the prices
 
-    print("You can buy " + NormalPName + " from an NPC for " + fNPCBuyPrice + "$ and sell it to him for " + fNPCSellPrice + "$")
-
+  #  print("You can buy " + NormalPName + " from an NPC for " + fNPCBuyPrice + "$ and sell it to him for " + fNPCSellPrice + "$")
+    print("checking the product " + NormalPName + "...")
     Product = (NPCPrices["productIds"][Product]["NormalName"])
 
 
@@ -100,31 +100,32 @@ for x in (NPCPrices["productIds"]):
     rProfit = round(Profit, 2)
     srProfit = str(rProfit)
     frProfit = float(rProfit)
-    print()
-    print("--------------------------------------")
 
 
     #if FrSellPrice > fNPCBuyPrice:
-    if srProfit > "0":
-         print("You are making " + srProfit + "$ with this, do it!")
+#    if srProfit > "0":
+         #print("You are making " + srProfit + "$ with this, do it!")
 #        print()
 #    else:
-         print("You are losing money, ("+ srProfit + "$) dont do it!")
+      #   print("You are losing money, ("+ srProfit + "$) dont do it!")
 #        print()
 
     if frProfit > HighestProfit:
         print()
         print("Highest profit margin so far")
-        print()
+        
+        print("--------------------------------------")   
+        
         HighestProfit = frProfit
         BestProduct = NormalPName
-        
-#    else:
+  
+    else:
+         print("--------------------------------------")   
 #        print()
-        print("Not the highest profit margin so far")
+ #       print("Not the highest profit margin so far")
 #        print()
 strHighestProfit = str(HighestProfit)
-print("the highest profit margin is: " + strHighestProfit + "$ with the product " + BestProduct)
+print("the highest profit margin is: " + strHighestProfit + "$ on the product " + BestProduct)
 print()
 print()
 print("Buy me VIP, IGN: flimmerkraft")
