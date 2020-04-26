@@ -14,5 +14,9 @@ type Python3 and then drag the python file in the terminal).
 Then you should get asked, what product you want to see the price of. NOT ALL PRODUCTS ARE CURRENTLY SUPPORTED, ONLY THOSE IN
 THE PRICES.JSON FILE!!
 
+
+You also have to insert your Apikey in the "ApiKeyInHere.txt" file. Delete the text thats in there, just your api key should be
+in there.
+
 Everything should work, if not write me a message on Discord, I am P337#1980
 
