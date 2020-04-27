@@ -34,16 +34,14 @@ with open('Prices.json', 'r') as myfile:
 
     # parse file
 NPCPrices = json.loads(data)
-#print("succses?: " + str(obj['succses']))
-
-FileReadSuccses = (NPCPrices["success"])
-print("Was reading the file a succses? " + FileReadSuccses)
-
+print()
 
     #getting the NPC prices
-NPCSellPrice = (NPCPrices["productIds"][Product]["MerchantSellPrice"])
-NPCBuyPrice = (NPCPrices["productIds"][Product]["MerchantBuyPrice"])
+NPCBuyPrice = NPCPrices["productIds"][Product]["MerchantBuyPrice"]
+NPCSellPrice = NPCPrices["productIds"][Product]["MerchantSellPrice"]
 
+    #merchant?
+Merchant = (NPCPrices["productIds"][Product]["Merchant"])
 
     #make the prices to floats
 fNPCBuyPrice = str(NPCBuyPrice)  # float -> str
@@ -51,11 +49,11 @@ fNPCSellPrice = str(NPCSellPrice)  # float -> str
 
     #printing the prices
 
-print("You can buy " + NormalPName + " from an NPC for " + fNPCBuyPrice + "$ and sell it to him for " + fNPCSellPrice + "$")
+print("You can buy " + NormalPName + " from the " + Merchant + " merchant for " + fNPCBuyPrice + "$ and sell it to him for " + fNPCSellPrice + "$")
 
-Product = (NPCPrices["productIds"][Product]["NormalName"])
+print()
 
-
+Product = NPCPrices["productIds"][Product]["NormalName"] 
     #BAZAAR PRICES
 
     #getting the data
@@ -66,35 +64,32 @@ JSONData = (r.json())
 result = str(JSONData)
 
 
-    #did it sucsess?
-print("Was connecting to the Hypixel API a succses?")
-print(JSONData["success"])
-
-
     #get the prices
-sellPrice = (JSONData["product_info"]['quick_status']['buyPrice'])
-buyPrice = (JSONData['product_info']['quick_status']['sellPrice'])
 
+sellPrice = JSONData["product_info"]['quick_status']['buyPrice']
+buyPrice = JSONData['product_info']['quick_status']['sellPrice']
 
     #round up the prices
 rSellPrice = round(sellPrice, 2)
 rBuyPrice = round(buyPrice, 2)
 
-    #make the prices to floats
+    #make the prices to strings
 FrSellPrice = str(rSellPrice)  # float -> str
 FrBuyPrice = str(rBuyPrice)  # float -> str
 
     #print the prices
-print("You can buy " + NormalPName + " from the bazaar for " + FrBuyPrice + "$ and sell it to the bazaar for " + FrSellPrice + "$")
+print("You can buy " + NormalPName +  " from the bazaar for " + FrBuyPrice + "$ and sell it to the bazaar for " + FrSellPrice + "$")
 
 
     #Do you make Profit?
 fffNPCBuyPrice = float(NPCBuyPrice)
-#rSellPrice = float(rSellPrice)
 Profit = rSellPrice - fffNPCBuyPrice
-#Profit = float(Profit)
 rProfit = round(Profit, 2)
 srProfit = str(rProfit)
+
+fTotalProfit = rProfit*640
+RoundedfTotalProfit = round(fTotalProfit)
+strTotalProfit = str(RoundedfTotalProfit)
 
 print()
 print()
@@ -103,13 +98,12 @@ print("--------------------------------------")
 
 #if FrSellPrice > fNPCBuyPrice:
 if srProfit > "0":
-    print("You are making " + srProfit + "$ with this, do it!")
+    print("You are making " + srProfit + "$ with this, do it! If you flip 640, you can even make " + strTotalProfit + "$. Out of thin air!")
 else:
     print("You are losing money, ("+ srProfit + "$) dont do it!")
 
     
         #Print every avaiable Product, remove #
-#for x in NPCPrices["productIds"]: print(x)
 print()
 print()
 print()
