@@ -1,190 +1,349 @@
+
 {
 	"success": "Yes!",
 	"productIds": {
 		"wheat": {
 			"MerchantSellPrice": "1",
 			"MerchantBuyPrice": "2.33",
+			"Merchant": "Farmer",
 			"NormalName": "WHEAT"
 		},
 		"carrot": {
 			"MerchantSellPrice": "1",
 			"MerchantBuyPrice": "2.33",
+			"Merchant": "Farmer",
 			"NormalName": "CARROT_ITEM"
 		},
 		"potato": {
 			"MerchantSellPrice": "1",
 			"MerchantBuyPrice": "2.33",
+			"Merchant": "Farmer",
 			"NormalName": "POTATO_ITEM"
 		},
 		"melon": {
 			"MerchantSellPrice": "0.5",
 			"MerchantBuyPrice": "2",
+			"Merchant": "Farmer",
 			"NormalName": "MELON"
 		},
 		"sugar cane": {
 			"MerchantSellPrice": "2",
 			"MerchantBuyPrice": "5",
+			"Merchant": "Farmer",
 			"NormalName": "SUGAR_CANE"
 		},
 		"pumpkin": {
 			"MerchantSellPrice": "4",
 			"MerchantBuyPrice": "8",
+			"Merchant": "Farmer",
 			"NormalName": "PUMPKIN"
 		},
 		"red mushroom": {
 			"MerchantSellPrice": "4",
 			"MerchantBuyPrice": "12",
+			"Merchant": "Farmer",
 			"NormalName": "RED_MUSHROOM"
 		},
 		"brown mushroom": {
 			"MerchantSellPrice": "4",
 			"MerchantBuyPrice": "12",
+			"Merchant": "Farmer",
 			"NormalName": "BROWN_MUSHROOM"
 		},
 		"sand": {
 			"MerchantSellPrice": "2",
 			"MerchantBuyPrice": "4",
+			"Merchant": "Farmer",
 			"NormalName": "SAND"
 		},
 		"coal": {
 			"MerchantSellPrice": "2",
 			"MerchantBuyPrice": "4",
+			"Merchant": "Miner",
 			"NormalName": "COAL"
 		},
 		"iron ingot": {
 			"MerchantSellPrice": "3",
 			"MerchantBuyPrice": "6",
+			"Merchant": "Miner",
 			"NormalName": "IRON_INGOT"
 		},
 		"gravel": {
 			"MerchantSellPrice": "3",
 			"MerchantBuyPrice": "6",
+			"Merchant": "Miner",
 			"NormalName": "GRAVEL"
 		},
 		"cobblestone": {
 			"MerchantSellPrice": "1",
 			"MerchantBuyPrice": "3",
+			"Merchant": "Miner",
 			"NormalName": "COBBLESTONE"
 		},
 		"ice": {
 			"MerchantSellPrice": "0.5",
 			"MerchantBuyPrice": "1",
+			"Merchant": "Builder",
 			"NormalName": "ICE"
 		},
 		"packed ice": {
 			"MerchantSellPrice": "4.5",
 			"MerchantBuyPrice": "9",
+			"Merchant": "Builder",
 			"NormalName": "PACKED_ICE"
 		},
 		"raw fish": {
 			"MerchantSellPrice": "6",
 			"MerchantBuyPrice": "20",
+			"Merchant": "Fisher",
 			"NormalName": "RAW_FISH:1"
 		},
 		"raw salmon": {
 			"MerchantSellPrice": "10",
 			"MerchantBuyPrice": "30",
+			"Merchant": "Fisher",
 			"NormalName": "RAW_FISH:2"
 		},
 		"pufferfish": {
 			"MerchantSellPrice": "15",
 			"MerchantBuyPrice": "40",
+			"Merchant": "Fisher",
 			"NormalName": "RAW_FISH:3"
 		},
 		"oak log": {
 			"MerchantSellPrice": "2",
 			"MerchantBuyPrice": "5",
+			"Merchant": "Lumber",
 			"NormalName": "LOG"
 		},
 		"birch log": {
 			"MerchantSellPrice": "2",
 			"MerchantBuyPrice": "5",
+			"Merchant": "Lumber",
 			"NormalName": "LOG:1"
 		},
 		"spruce log": {
 			"MerchantSellPrice": "2",
 			"MerchantBuyPrice": "5",
+			"Merchant": "Lumber",
 			"NormalName": "LOG:2"
 		},
 		"dark oak log": {
 			"MerchantSellPrice": "2",
 			"MerchantBuyPrice": "5",
+			"Merchant": "Lumber",
 			"NormalName": "LOG:3"
 		},
 		"acacia log": {
 			"MerchantSellPrice": "2",
 			"MerchantBuyPrice": "5",
+			"Merchant": "Lumber",
 			"NormalName": "LOG_2"
 		},
 		"jungle log": {
 			"MerchantSellPrice": "2",
 			"MerchantBuyPrice": "5",
+			"Merchant": "Lumber",
 			"NormalName": "LOG_2:1"
 		},
 		"rotten flesh": {
 			"MerchantSellPrice": "2",
 			"MerchantBuyPrice": "8",
+			"Merchant": "Adventurer",
 			"NormalName": "ROTTEN_FLESH"
 		},
 		"bone": {
 			"MerchantSellPrice": "2",
 			"MerchantBuyPrice": "8",
+			"Merchant": "Adventurer",
 			"NormalName": "BONE"
 		},
 		"string": {
 			"MerchantSellPrice": "3",
 			"MerchantBuyPrice": "10",
+			"Merchant": "Adventurer",
 			"NormalName": "STRING"
 		},
 		"slime ball": {
 			"MerchantSellPrice": "5",
 			"MerchantBuyPrice": "14",
+			"Merchant": "Adventurer",
 			"NormalName": "SLIME_BALL"
 		},
 		"enchanted cobblestone": {
 			"MerchantSellPrice": "160",
-			"MerchantBuyPrice": "999999",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "Miner",
 			"NormalName": "ENCHANTED_COBBLESTONE"
 		},
 		"enchanted coal": {
 			"MerchantSellPrice": "320",
-			"MerchantBuyPrice": "999999",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
 			"NormalName": "ENCHANTED_COAL"
 		},
 		"enchanted charcoal": {
 			"MerchantSellPrice": "320",
-			"MerchantBuyPrice": "999999",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
 			"NormalName": "ENCHANTED_CHARCOAL"
 		},
 		"enchanted coal block": {
 			"MerchantSellPrice": "51200",
-			"MerchantBuyPrice": "999999",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
 			"NormalName": "ENCHANTED_COAL_BLOCK"
 		},
 		"enchanted iron": {
 			"MerchantSellPrice": "480",
-			"MerchantBuyPrice": "999999",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
 			"NormalName": "ENCHANTED_IRON"
 		},
 		"enchanted iron block": {
 			"MerchantSellPrice": "76800",
-			"MerchantBuyPrice": "999999",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
 			"NormalName": "ENCHANTED_IRON_BLOCK"
 		},
 		"gold ingot": {
 			"MerchantSellPrice": "4",
-			"MerchantBuyPrice": "999999",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
 			"NormalName": "GOLD_INGOT"
 		},
 		"enchanted gold": {
 			"MerchantSellPrice": "800",
-			"MerchantBuyPrice": "999999",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
 			"NormalName": "ENCHANTED_GOLD"
 		},
 		"enchanted gold block": {
 			"MerchantSellPrice": "102400",
-			"MerchantBuyPrice": "999999",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
 			"NormalName": "ENCHANTED_GOLD_BLOCK"
+		},
+			"diamond": {
+			"MerchantSellPrice": "8",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "DIAMOND"
+		},
+			"enchanted diamond block": {
+			"MerchantSellPrice": "204800",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "ENCHANTED_DIAMOND_BLOCK"
+		},
+			"emerald": {
+			"MerchantSellPrice": "7",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "ENCHANTED_GOLD_BLOCK"
+		},
+			"enchanted emerald": {
+			"MerchantSellPrice": "960",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "ENCHANTED_EMERALD"
+		},
+			"ink sack": {
+			"MerchantSellPrice": "2",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "INK_SACK"
+		},
+			"enchanted ink sack": {
+			"MerchantSellPrice": "320",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "ENCHANTED_INK_SACK"
+		},
+			"ink sack:4": {
+			"MerchantSellPrice": "1",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "INK_SACK:4"
+		},
+			"enchanted lapis lazuli": {
+			"MerchantSellPrice": "160",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "ENCHANTED_LAPIS_LAZULI"
+		},
+			"enchanted lapis lazuli block": {
+			"MerchantSellPrice": "25600",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "ENCHANTED_LAPIS_LAZULI_BLOCK"
+		},
+			"redstone": {
+			"MerchantSellPrice": "1",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "REDSTONE"
+		},
+			"enchanted redstone": {
+			"MerchantSellPrice": "160",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "ENCHANTED_REDSTONE"
+		},
+			"enchanted redstone block": {
+			"MerchantSellPrice": "25600",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "ENCHANTED_REDSTONE_BLOCK"
+		},
+			"quartz": {
+			"MerchantSellPrice": "16",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "QUARTZ"
+		},
+			"enchanted quartz": {
+			"MerchantSellPrice": "640",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "ENCHANTED_QUARTZ"
+		},
+			"enchanted quartz block": {
+			"MerchantSellPrice": "102400",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "ENCHANTED_QUARTZ_BLOCK"
+		},
+			"obsidian": {
+			"MerchantSellPrice": "12",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "OBSIDIAN"
+		},
+			"enchanted obsidian": {
+			"MerchantSellPrice": "1920",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "ENCHANTED_OBSIDIAN"
+		},
+			"glowstone dust": {
+			"MerchantSellPrice": "2",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "GLOWSTONE_DUST"
+		},
+			"enchanted glowstone dust": {
+			"MerchantSellPrice": "320",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "ENCHANTED_GLOWSTONE_DUST"
+		},
+			"enchanted glowstone block": {
+			"MerchantSellPrice": "61440",
+			"MerchantBuyPrice": "6942069420",
+			"Merchant": "None /:",
+			"NormalName": "ENCHANTED_GLOWSTONE"
 		}
+		
 	}
 }
