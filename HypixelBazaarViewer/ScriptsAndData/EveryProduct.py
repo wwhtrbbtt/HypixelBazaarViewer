@@ -11,13 +11,17 @@
 
 import requests
 import json
-import string
 import sys
+from natsort import humansorted
+
+
 sys.path.insert(1, 'ScriptsAndData')
 
+
 toplist = []
-margins_listProfit = []
-margins_listProduct = []
+AllProfit = 0
+#margins_listProfit = []
+#margins_listProduct = []
 
 
 readableName = "0"
@@ -46,15 +50,15 @@ for x in (NPCPrices["productIds"]):
     FileReadSuccses = (NPCPrices["success"])
 
 
-    #getting the NPC prices
+    #getting the NPC price
     NPCSellPrice = (NPCPrices["productIds"][Product]["MerchantSellPrice"])
     NPCBuyPrice = (NPCPrices["productIds"][Product]["MerchantBuyPrice"])
 
     #getting the merchnat that sells that stuff
 
     Merchant = (NPCPrices["productIds"][Product]["Merchant"])
-#   NPCBuyPrice = NPCPrices["productIds"][Product] if "Product" in NPCPrices["productIds"] else "This Product doesnt exist in my database /: Please contact me"
-#   NPCBuyPrice = NPCPrices["productIds"][Product] if "Product" in NPCPrices["productIds"] else "This Product doesnt exist in my database /: Please contact me"
+    #NPCBuyPrice = NPCPrices["productIds"][Product] if "Product" in NPCPrices["productIds"] else "This Product doesnt exist in my database /: Please contact me"
+    #NPCBuyPrice = NPCPrices["productIds"][Product] if "Product" in NPCPrices["productIds"] else "This Product doesnt exist in my database /: Please contact me"
 
     #make the prices to strings
     fNPCBuyPrice = str(NPCBuyPrice)  # float -> str
@@ -62,7 +66,6 @@ for x in (NPCPrices["productIds"]):
 
     #printing the prices
 
- 
     print("checking the product " + Product + "...")
     readableName = Product
     Product = (NPCPrices["productIds"][Product]["NormalName"])
@@ -93,24 +96,22 @@ for x in (NPCPrices["productIds"]):
 
     #Do you make Profit?
     fffNPCBuyPrice = float(NPCBuyPrice)
-#rSellPrice = float(rSellPrice)
+    #rSellPrice = float(rSellPrice)
     Profit = rSellPrice - fffNPCBuyPrice
-#Profit = float(Profit)
+    #Profit = float(Profit)
     rProfit = round(Profit, 2)
     srProfit = str(rProfit)
     frProfit = float(rProfit)
-
-    
         #would you make profit?
     if frProfit > 0:
-                 #add the Profit value to a list
- #      margins_listProfit.append(frProfit)
- #      margins_listProduct.append(CoolProductNameLmaoTheseNamings)
+        #add the Profit value to a list
         #calculate total profit
         fTotalProfit = frProfit*640
         RoundedfTotalProfit = round(fTotalProfit)
         strTotalProfit = str(RoundedfTotalProfit)
-        toplist.append(srProfit + "$ by selling " + readableName + " to the bazaar, or " + strTotalProfit + " if you flip 640, after you bought it from the " + Merchant + "merchant")
+        AllProfit = AllProfit + RoundedfTotalProfit
+        #print(AllProfit)
+        toplist.append(srProfit + "$ by selling " + readableName + " to the bazaar, or " + strTotalProfit + "$ if you flip 640, after you bought it from the " + Merchant + "merchant")
         print("--------------------------------------")
     else:
         print("--------------------------------------")
@@ -121,33 +122,34 @@ print("========================================")
 #reversing and sorting lists
             #top5 products, this code is shit god damnit                Ill fix it later, or if someone reads this: Make it better please :)   
 
+sortedtoplist = humansorted(toplist)
+sortedtoplist.reverse()
 
-toplist.sort()
-toplist.reverse()
+strAllProfit = str(AllProfit)
 
-
-
-
-#List of the best things to sell
-                       
+#list of the top things to sell
+print("Top 1: you can make " + sortedtoplist[0] + ". Nice!")
 print()
-
-print("Top 1: you can make " + toplist[0] + "after you bought it from the merchant. Nice!")
+print("Top 2: you can make " + sortedtoplist[1] + ". Free Money!")
 print()
-
-print("Top 2: you can make " + toplist[1] + "after you bought it from the merchant. Free Money!")
+print("Top 3: you can make " + sortedtoplist[2])
 print()
-
-print("Top 3: you can make " + toplist[2] + "after you bought it from the merchant.")
+print("Top 4: you can make " + sortedtoplist[3])
 print()
-
-print("Top 4: you can make " + toplist[3] + "after you bought it from the merchant.")
+print("Top 5: you can make " + sortedtoplist[4])
 print()
+print("Top 6: you can make " + sortedtoplist[5])
+print()
+print("Top 7: you can make " + sortedtoplist[6])
+print()
+print("Top 8: you can make " + sortedtoplist[7])
+print()
+print("Top 9: you can make " + sortedtoplist[8])
+print()
+print("Top 10: you can make " + sortedtoplist[9])
+print()
+print("The total profit you can make is " + strAllProfit+ "$. Impressive!")
 
-print("Top 5: you can make " + toplist[4] + "after you bought it from the merchant.")
-
-#print(margins_listProfit)
-#print(margins_listProduct)
 print()
 print()
 print("=====================")
