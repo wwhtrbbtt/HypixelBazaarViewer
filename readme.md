@@ -2,4 +2,4 @@ This is a small script that allows you to view the sell and buy prices for the i
 Its in a early stage of developement, so expect bugs.
 
 
-THE GUI AND COMMANDLINE VERIONS AREN'T SUPPORTED ANYMORE! USE THE DISCORD BOT
+THE GUI AND COMMANDLINE VERIONS AREN'T SUPPORTED ANYMORE! USE THE DISCORD BOT, HERE: https://discord.gg/hxh4B97
