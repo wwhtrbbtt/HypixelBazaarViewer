@@ -1,5 +1,5 @@
 
-DiscordBotToken = "NzA1MTQ4MDI4ODYzOTA1OTAy.XrfMjA.mQGeEbX7N5VEs2rE5w-ZFJR7iB0" #    <--- Your Discord Bot token.
+DiscordBotToken = "Your bot token" #    <--- Your Discord Bot token.
 
 global sortedtoplist
 
