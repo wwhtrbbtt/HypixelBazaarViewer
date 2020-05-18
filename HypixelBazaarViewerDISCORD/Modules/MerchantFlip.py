@@ -4,18 +4,14 @@ import json
 import requests
 from natsort import humansorted
 import sys
+from SmallDefs import *
 
 sys.path.insert(1, 'Modules')
 
-with open('ApiKeyInHere.txt', 'r') as KeyTXT:
-  ApiKey = KeyTXT.read()
-
-with open('Prices.json', 'r') as prices:
-    data=prices.read()
-    # parse file
-NPCPrices = json.loads(data)
+NPCPrices = NPCPrices()
 
 def MerchantFlip():
+    JSON = JSONData()
     #print("working!")
     
     AllProfit = 0
@@ -41,22 +37,12 @@ def MerchantFlip():
             
             
         except KeyError as ke:
-            print("KeyError lol, but not really. idk")
-         #   NPCBuyPrice = "0"
-          #  NPCSellPrice = "0"
-           #  Merchant = "0"
+            a = 0
 
         #bazaar data
-        payload = {'key': ApiKey, "productId": Product}
-        r = requests.get('https://api.hypixel.net/skyblock/bazaar/product?', params=payload)
-        JSONData = (r.json())
-        #print(JSONData)
-        #print(r.url)
-        sellPrice = JSONData["product_info"]['quick_status']['buyPrice']
-        buyPrice = JSONData['product_info']['quick_status']['sellPrice']
-        #print(JSONData["product_info"]['quick_status']['buyPrice'])
-        #print(JSONData['product_info']['quick_status']['sellPrice'])
-        #npcdata
+        sellPrice = JSON[Product]['quick_status']['sellPrice']
+        buyPrice = JSON[Product]['quick_status']['buyPrice']
+
 
             #round up the prices
         rSellPrice = round(sellPrice, 2)
@@ -68,8 +54,7 @@ def MerchantFlip():
 
             #Can you even buy that item?
         if NPCBuyPrice == "CantBuyThat":
-           # print("cant buy that /:")
-           a = 0
+            a = 0
 
         else:
                 #Do you make Profit?

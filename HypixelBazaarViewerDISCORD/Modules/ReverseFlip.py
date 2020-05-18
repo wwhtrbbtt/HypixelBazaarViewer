@@ -3,18 +3,14 @@ import json
 import requests
 from natsort import humansorted
 import sys
+from SmallDefs import *
 
 sys.path.insert(1, 'Modules')
 
-with open('ApiKeyInHere.txt', 'r') as KeyTXT:
-  ApiKey = KeyTXT.read()
-
-with open('Prices.json', 'r') as prices:
-    data=prices.read()
-    # parse file
-NPCPrices = json.loads(data)
+NPCPrices = NPCPrices()
 
 def ReverseFlip():
+    JSON = JSONData()
     toplist = []
     #LOOP THROUGH ALL PRODUCTS
     print("test2")
@@ -31,13 +27,9 @@ def ReverseFlip():
         except KeyError as ke:
             print("KeyError lol, but not really. idk")
         #bazaar data
-        payload = {'key': ApiKey, "productId": Product}
-        r = requests.get('https://api.hypixel.net/skyblock/bazaar/product?', params=payload)
-        JSONData = (r.json())
-        result = str(JSONData)
 
-        sellPrice = JSONData["product_info"]['quick_status']['buyPrice']
-        buyPrice = float(JSONData['product_info']['quick_status']['sellPrice'])
+        sellPrice = float(JSON[Product]['quick_status']['sellPrice'])
+        buyPrice = float(JSON[Product]['quick_status']['buyPrice'])
         #npcdata
             #round up the prices
         rSellPrice = round(sellPrice, 2)

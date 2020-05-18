@@ -116,14 +116,14 @@
 			"MerchantSellPrice": "6",
 			"MerchantBuyPrice": "20",
 			"Merchant": "Fisher",
-			"NormalName": "RAW_FISH:1",
+			"NormalName": "RAW_FISH",
 			"Enchanted": "ENCHANTED_RAW_FISH"
 		},
 		"raw salmon": {
 			"MerchantSellPrice": "10",
 			"MerchantBuyPrice": "30",
 			"Merchant": "Fisher",
-			"NormalName": "RAW_FISH:2"
+			"NormalName": "RAW_FISH:1"
 		},
 		"pufferfish": {
 			"MerchantSellPrice": "15",
@@ -436,6 +436,19 @@
 			"Merchant": "Adventurer",
 			"NormalName": "SULPHUR",
 			"Enchanted": "ENCHANTED_GUNPOWDER"
+		},
+			"enderpearl": {
+			"MerchantSellPrice": "10",
+			"MerchantBuyPrice": "CantBuyThat",
+			"Merchant": "None /:",
+			"NormalName": "ENDER_PEARL",
+			"Enchanted": "ENCHANTED_ENDER_PEARL"
+		},
+			"enchanted enderpearl": {
+			"MerchantSellPrice": "200",
+			"MerchantBuyPrice": "CantBuyThat",
+			"Merchant": "None /:",
+			"NormalName": "RABBIT_FOOT"
 		}
 		
 
