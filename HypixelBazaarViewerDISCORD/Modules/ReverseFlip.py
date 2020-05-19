@@ -13,43 +13,29 @@ def ReverseFlip():
     JSON = JSONData()
     toplist = []
     #LOOP THROUGH ALL PRODUCTS
-    print("test2")
     for x in (NPCPrices["productIds"]):  
         Product = x
-        #print(x)
         NormalPName = Product
         #npc data, local
         try:
-            NPCSellPrice = float((NPCPrices["productIds"][Product]["MerchantSellPrice"]))
-            NPCBuyPrice = (NPCPrices["productIds"][Product]["MerchantBuyPrice"])
-            Merchant = (NPCPrices["productIds"][Product]["Merchant"])
+            sellPrice = float(NPCPrices["productIds"][Product]["MerchantSellPrice"])
             Product = (NPCPrices["productIds"][Product]["NormalName"])          
         except KeyError as ke:
-            print("KeyError lol, but not really. idk")
-        #bazaar data
+            a = 0
+        try:
+            buyPrice = float(JSON[Product]['quick_status']['buyPrice'])
+        except:
+            a = 0
 
-        sellPrice = float(JSON[Product]['quick_status']['sellPrice'])
-        buyPrice = float(JSON[Product]['quick_status']['buyPrice'])
-        #npcdata
-            #round up the prices
-        rSellPrice = round(sellPrice, 2)
-        rBuyPrice = round(buyPrice, 2)
-            #make the prices to strings
-        frSellPrice = str(rSellPrice)  # float -> str
-        frBuyPrice = str(rBuyPrice)  # float -> str            
-            #Can you even buy that item?
-        if NPCBuyPrice == "CantBuyThat":
-           a = 0
+        if sellPrice > buyPrice:
+
+            Profit = sellPrice - buyPrice
+            rProfit = round(Profit, 1)
+            strProfit = str(rProfit)
+            toplist.append("You can make " + strProfit + "$ by selling " + NormalPName + " to a NPC, after you bought it at the bazaar.")
+
         else:
-                #Do you make Profit?
-            Profit = NPCSellPrice - buyPrice
-
-            rProfit = round(Profit, 2)
-            srProfit = str(rProfit)
-            frProfit = float(rProfit)
-                #would you make profit?
-            if frProfit > 0:
-                toplist.append(srProfit + "$ by selling " + NormalPName + " to a NPC, after you bought it at the bazaar.")
+            a = 0
 
     #print the stuff
     sortedtoplist = humansorted(toplist)

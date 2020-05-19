@@ -24,7 +24,11 @@ def JSONData():
     r = requests.get('https://api.slothpixel.me/api/skyblock/bazaar/')
     JSONData = (r.json())
     return JSONData
-
-
+    
+def percent(a, b) : 
+  
+    result = int(((b - a) * 100) / a) 
+  
+    return result 
 
 

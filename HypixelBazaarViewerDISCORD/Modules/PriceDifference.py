@@ -12,11 +12,9 @@ NPCPrices = NPCPrices()
 def PriceDifference():
     JSON = JSONData()
     toplist = []
-    print(ApiKey)   
          
     for x in (NPCPrices["productIds"]):          
         Product = x
-        print(x)
        
         readableName = Product
         Product = (NPCPrices["productIds"][Product]["NormalName"])
@@ -37,17 +35,14 @@ def PriceDifference():
         
         rIncrease = round(Increase, 2)
         strIncrease = str(rIncrease) # 1
-        print(strIncrease)
 
         #%difference
 
-        Difference = (Increase/sellPrice)*100
+        Difference = percent(sellPrice, buyPrice)
 
 
         rDifference = round(Difference)
         strDifference = str(rDifference)
-        print(strDifference)
-        print("===")
 
         #storing the difference and the product
         if Difference > 0:

@@ -219,12 +219,6 @@
 			"Merchant": "None /:",
 			"NormalName": "ENCHANTED_CHARCOAL"
 		},
-		"enchanted coal block": {
-			"MerchantSellPrice": "51200",
-			"MerchantBuyPrice": "CantBuyThat",
-			"Merchant": "None /:",
-			"NormalName": "ENCHANTED_COAL_BLOCK"
-		},
 		"enchanted iron": {
 			"MerchantSellPrice": "480",
 			"MerchantBuyPrice": "CantBuyThat",
@@ -346,15 +340,9 @@
 			"Merchant": "None /:",
 			"NormalName": "ENCHANTED_QUARTZ"
 		},
-			"enchanted quartz block": {
-			"MerchantSellPrice": "102400",
-			"MerchantBuyPrice": "CantBuyThat",
-			"Merchant": "None /:",
-			"NormalName": "ENCHANTED_QUARTZ_BLOCK"
-		},
 			"obsidian": {
 			"MerchantSellPrice": "12",
-			"MerchantBuyPrice": "50",
+			"MerchantBuyPrice": "CantBuyThat",
 			"Merchant": "None /:",
 			"NormalName": "OBSIDIAN",
 			"Enchanted": "ENCHANTED_OBSIDIAN"
@@ -448,7 +436,7 @@
 			"MerchantSellPrice": "200",
 			"MerchantBuyPrice": "CantBuyThat",
 			"Merchant": "None /:",
-			"NormalName": "RABBIT_FOOT"
+			"NormalName": "ENCHANTED_ENDER_PEARL"
 		}
 		
 

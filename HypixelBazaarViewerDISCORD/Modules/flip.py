@@ -37,8 +37,8 @@ def flip(Product):
     try:
         Product = NPCPrices["productIds"][Product]["NormalName"] 
 
-        sellPrice = JSON[Product]['quick_status']['buyPrice']
-        buyPrice = JSON[Product]['quick_status']['sellPrice']
+        buyPrice = JSON[Product]['quick_status']['buyPrice']
+        sellPrice = JSON[Product]['quick_status']['sellPrice']
             #round up the prices
         rSellPrice = round(sellPrice, 2)
         rBuyPrice = round(buyPrice, 2)
