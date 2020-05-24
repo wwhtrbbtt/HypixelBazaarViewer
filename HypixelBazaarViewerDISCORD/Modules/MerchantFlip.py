@@ -73,7 +73,7 @@ def MerchantFlip():
                 RoundedfTotalProfit = round(fTotalProfit)
                 strTotalProfit = str(RoundedfTotalProfit)
                 AllProfit = AllProfit + RoundedfTotalProfit
-                toplist.append("You can make " + srProfit + "$ by selling " + NormalPName + " to the bazaar, or " + strTotalProfit + "$ if you flip 640, after you bought it from the " + Merchant + "-merchant.")
+                toplist.append("You can make " + srProfit + "$ by selling **" + NormalPName + "** to the bazaar, or " + strTotalProfit + "$ if you flip 640, after you bought it from the " + Merchant + "-merchant.")
                 strAllProfit = str(AllProfit)
 
 

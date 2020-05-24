@@ -30,9 +30,9 @@ def ReverseFlip():
         if sellPrice > buyPrice:
 
             Profit = sellPrice - buyPrice
-            rProfit = round(Profit, 1)
+            rProfit = round(Profit, 2)
             strProfit = str(rProfit)
-            toplist.append("You can make " + strProfit + "$ by selling " + NormalPName + " to a NPC, after you bought it at the bazaar.")
+            toplist.append("You can make " + strProfit + "$ by selling **" + NormalPName + "** to a NPC, after you bought it at the bazaar.")
 
         else:
             a = 0

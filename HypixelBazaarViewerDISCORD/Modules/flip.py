@@ -10,9 +10,7 @@ sys.path.insert(1, 'Modules')
 NPCPrices = NPCPrices()
 
 def flip(Product):
-    JSON = []
-    r = requests.get('https://api.slothpixel.me/api/skyblock/bazaar/')
-    JSON = (r.json())
+    JSON = JSONData()
     Send = []
 
     NormalPName = Product

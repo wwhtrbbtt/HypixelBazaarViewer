@@ -28,7 +28,7 @@ def BestLogs():
 
             rSellPrice = round(sellPrice, 1)
             strSellPrice = str(rSellPrice)
-            toplist.append("You can make " + strSellPrice + "$ per log if you sell " + NormalName + " to the bazaar.")
+            toplist.append("You can make " + strSellPrice + "$ per log if you sell **" + NormalName + "** to the bazaar.")
 
     sortedtoplist = humansorted(toplist)
     sortedtoplist.reverse()

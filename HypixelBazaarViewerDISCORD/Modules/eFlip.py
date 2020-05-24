@@ -53,8 +53,8 @@ def eFlip():
                 #print(rxxProduct)
                 strProfit = str(Profit)
                 #print(Profit)
-                
-                toplist.append("You can make " + strProfit + "$ by buying 160 " + NormalName + " for " + strxxProduct + "$, craft it to enchanted " + NormalName + " and then sell it for " + strEnchantedSellPrice + "$ back to the bazaar. Profit!")
+                strCraftNumber = str(CraftNumber)
+                toplist.append("You can make " + strProfit + "$ by buying " + strCraftNumber + " **" + NormalName + "** for " + strxxProduct + "$, craft it to enchanted " + NormalName + " and then sell it for " + strEnchantedSellPrice + "$ back to the bazaar. Profit!")
                 #print("appended")
                 #await message.channel.send("You can make " + toplist[0])
                 #print(toplist)

@@ -22,6 +22,8 @@ def PriceDifference():
         #BAZAAR PRICES
         buyPrice = JSON[Product]['quick_status']['buyPrice']
         sellPrice = JSON[Product]['quick_status']['sellPrice']
+        buyVolume = JSON[Product]['quick_status']['buyVolume']
+        sellVolume = JSON[Product]['quick_status']['sellVolume']
         #round up the prices
         rSellPrice = round(sellPrice, 2)
         rBuyPrice = round(buyPrice, 2)
@@ -44,10 +46,13 @@ def PriceDifference():
         rDifference = round(Difference)
         strDifference = str(rDifference)
 
+        strSellVolume = PrettyNumbers(sellVolume)
+        strBuyVolume = PrettyNumbers(buyVolume)
+
         #storing the difference and the product
         if Difference > 0:
             #add the value to a list
-            toplist.append("There is a " + strDifference + "% difference between the sell and buy price of " + readableName + ", or " + strIncrease + "$.")      
+            toplist.append("There is a " + strDifference + "% difference between the sell and buy price of **" + readableName + "**, or " + strIncrease + "$ *(BuyVolume: " + strBuyVolume + " SellVolume: " + strSellVolume + ")*.")      
 
 
     sortedtoplist = humansorted(toplist)
