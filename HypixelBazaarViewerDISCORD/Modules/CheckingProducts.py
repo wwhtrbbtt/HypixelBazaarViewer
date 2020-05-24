@@ -1,11 +1,10 @@
-#import discord
-#from discord.utils import get
+
 import sys
 import json
+
+
+#DOESNT HAS ANY FUNCTION YET!
 from SmallDefs import *
-#import random
-#import time
-#DiscordBotToken = "NzA1MTQ4MDI4ODYzOTA1OTAy.XsQI2w.PjgDpn2ZuCYDF7sWP-hL6f_4Yx0" # 
 
 def CheckProducts():
 
