@@ -1,4 +1,4 @@
-DiscordBotToken = "YourToken" #    <--- Your Discord Bot token.
+DiscordBotToken = "NzA1MTQ4MDI4ODYzOTA1OTAy.XvZojQ.JAEPDwdoiOmFIXXys0Q95r6q7X8" #    <--- Your Discord Bot token.
 
 global sortedtoplist
 
@@ -8,7 +8,9 @@ import discord
 from discord.utils import get
 import sys
 import random
-
+import time
+import subprocess
+import os
 sys.path.insert(1, 'Modules')
 
 #########   modules
@@ -18,15 +20,15 @@ from MerchantFlip import MerchantFlip
 from ReverseFlip import ReverseFlip
 from PriceDifference import PriceDifference
 from flip import flip
-from NewNotify import NewNotify
+#from NewNotify import NewNotify
 from SmallDefs import *
 from formular import Score
-#from CheckingProducts import CheckProducts
-import time
+from watchdog import Watchdog
 
-#CheckProducts()
+print(os.path.dirname(os.path.realpath(__file__)))
+print("==============")
+os.system("cd Modules/ && python3 /Modules/CheckingProducts.py")
 
-#creating a session
 client = discord.Client()
 
 
@@ -34,7 +36,7 @@ client = discord.Client()
 
 async def on_ready():
 
-    activity = discord.Game(name="Hypixel")
+    activity = discord.Game(name="$commands")
     await client.change_presence(status=discord.Status.idle, activity=activity)
     print('We have logged in as {0.user}'.format(client))
 
@@ -83,11 +85,13 @@ async def on_message(message):
         embed.add_field(name="$everymerchantflip", value="Sends you a DM with every products to flip.", inline=False)
         embed.add_field(name="$pricedifference", value="This will give you the items from the bazaar with the biggest buy-sell gap.", inline=False)
         embed.add_field(name="$request (item)", value="If a item isnt supported yet, do this.", inline=False)
-        embed.add_field(name="$notify on/off", value="Using these two commands, you can toggle your notifications for events.", inline=False)
+        embed.add_field(name="$notify", value="Using these two commands, you can toggle your notifications for events.", inline=False)
         embed.add_field(name="$eflip", value="This will show you the top 5 items, you can buy from the bazaar, craft to the enchanted versions and resell them.", inline=False)
         embed.add_field(name="$bestlog", value="Shows the woodtype, thats worth the most atm.", inline=False)
+        #embed.add_field(name="$minions", value="You type in the details, and I say you how much you would make with that minion setup **code by e56, ported to a discord-bot by me.**", inline=False)
         embed.add_field(name="$skyscore", value="(BETA) That shows you the SkyScore of a product. The score gets calculated from the money you can make flipping it, and the buy/sell volume.", inline=False)
         embed.add_field(name="$reverseflip", value="This shows you items, that you can buy at the Bazaar and sell to an NPC for profit. Not much, but easy.", inline=False)
+        embed.add_field(name="$watchdog", value="Everyone loves the watchdog message, right? Now you can get it on discord!", inline=False)
         strColor = str(color)
         embed.set_footer(text="Color: " + strColor)
         await message.channel.send(embed=embed)
@@ -246,6 +250,7 @@ async def on_message(message):
                 await message.channel.send("Ok, when do you want to be notified for the product " + Product + "? Please enter just a number. You have 20 seconds.")
                 msg = await client.wait_for('message', timeout=20)
                 try:
+                    time.sleep(1)
                     Price = float(msg.content)
                     strPrice = str(Price)
                     await message.channel.send('Ok, you will be notified if the ' + buysell + ' price of ' + Product + " is under " + strPrice + "$.")
@@ -273,6 +278,18 @@ async def on_message(message):
         strColor = str(color)
         embed.set_footer(text="Color: " + strColor)
         await message.channel.send(embed=embed)
+
+ #   elif message.content.startswith('$giveaway'):
+ #       RanMember = random.choice(message.channel.guild.members).mention
+ #       await message.channel.send(str(RanMember) + " you won! If you dont answer in 24h, we will pick another user.")
+
+    elif message.content.startswith('$watchdog'):
+        await message.channel.send(Watchdog())
+
+
+   # elif message.content.startswith('$minioncalculator'):
+    #    MinionCalc()
+
 
 
 

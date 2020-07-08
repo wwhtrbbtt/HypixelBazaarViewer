@@ -36,6 +36,25 @@
 			"NormalName": "MELON",
 			"Enchanted": "ENCHANTED_MELON"
 		},
+		"enchanted melon": {
+			"MerchantSellPrice": "160",
+			"MerchantBuyPrice": "CantBuyThat",
+			"Merchant": "None :/",
+			"NormalName": "ENCHANTED_MELON",
+			"Enchanted": "ENCHANTED_MELON_BLOCK"
+		},
+		"enchanted melon block": {
+			"MerchantSellPrice": "25600",
+			"MerchantBuyPrice": "CantBuyThat",
+			"Merchant": "None :/",
+			"NormalName": "ENCHANTED_MELON_BLOCK"
+		},
+		"enchanted glistering melon": {
+			"MerchantSellPrice": "1024",
+			"MerchantBuyPrice": "CantBuyThat",
+			"Merchant": "None /:",
+			"NormalName": "ENCHANTED_GLISTERING_MELON"
+		},
 		"sugar cane": {
 			"MerchantSellPrice": "2",
 			"MerchantBuyPrice": "5",
@@ -98,26 +117,43 @@
 			"NormalName": "COBBLESTONE",
 			"Enchanted": "ENCHANTED_COBBLESTONE"
 		},
-		"ice": {
-			"MerchantSellPrice": "0.5",
-			"MerchantBuyPrice": "1",
-			"Merchant": "Builder",
-			"NormalName": "ICE",
-			"Enchanted": "ENCHANTED_ICE"
-		},
-		"packed ice": {
-			"MerchantSellPrice": "4.5",
-			"MerchantBuyPrice": "9",
-			"Merchant": "Builder",
-			"NormalName": "PACKED_ICE",
-			"Enchanted": "ENCHANTED_PACKED_ICE"
-		},
 		"raw fish": {
 			"MerchantSellPrice": "6",
 			"MerchantBuyPrice": "20",
 			"Merchant": "Fisher",
 			"NormalName": "RAW_FISH",
 			"Enchanted": "ENCHANTED_RAW_FISH"
+		},
+			"clay": {
+			"MerchantSellPrice": "3",
+			"MerchantBuyPrice": "CantBuyThat",
+			"Merchant": "None:/",
+			"NormalName": "CLAY_BALL",
+			"Enchanted": "ENCHANTED_CLAY_BALL"
+		},
+			"enchanted clay": {
+			"MerchantSellPrice": "12",
+			"MerchantBuyPrice": "CantBuyThat",
+			"Merchant": "None/:",
+			"NormalName": "ENCHANTED_CLAY_BALL"
+		},
+			"raw porkchop": {
+			"MerchantSellPrice": "5",
+			"MerchantBuyPrice": "CantBuyThat",
+			"Merchant": "None/:",
+			"NormalName": "PORK"
+		},
+			"enchanted raw porkchop": {
+			"MerchantSellPrice": "800",
+			"MerchantBuyPrice": "CantBuyThat",
+			"Merchant": "None/:",
+			"NormalName": "ENCHANTED_PORK"
+		},
+			"enchanted grilled porkchop": {
+			"MerchantSellPrice": "128000",
+			"MerchantBuyPrice": "CantBuyThat",
+			"Merchant": "None/:",
+			"NormalName": "ENCHANTED_GRILLED_PORK"
 		},
 		"raw salmon": {
 			"MerchantSellPrice": "10",
@@ -192,7 +228,8 @@
 			"MerchantBuyPrice": "10",
 			"Merchant": "Adventurer",
 			"NormalName": "STRING",
-			"Enchanted": "ENCHANTED_STRING"
+			"Enchanted": "ENCHANTED_STRING",
+			"SpecialCase": "192"
 		},
 		"slime ball": {
 			"MerchantSellPrice": "5",
@@ -385,18 +422,33 @@
 			"Merchant": "None /:",
 			"NormalName": "ENCHANTED_FLINT"
 		},
+			"ice": {
+			"MerchantSellPrice": "0.5",
+			"MerchantBuyPrice": "1",
+			"Merchant": "Builder",
+			"NormalName": "ICE",
+			"Enchanted": "ENCHANTED_ICE"
+		},
+			"packed ice": {
+			"MerchantSellPrice": "4.5",
+			"MerchantBuyPrice": "9",
+			"Merchant": "Builder",
+			"NormalName": "PACKED_ICE",
+			"Enchanted": "ENCHANTED_ICE",
+			"SpecialCase": "17.778"
+		},
 			"enchanted ice": {
 			"MerchantSellPrice": "80",
 			"MerchantBuyPrice": "CantBuyThat",
 			"Merchant": "None /:",
-			"NormalName": "ENCHANTED_ICE"
+			"NormalName": "ENCHANTED_ICE",
+			"Enchanted": "ENCHANTED_PACKED_ICE"
 		},
 			"enchanted packed ice": {
 			"MerchantSellPrice": "12800",
 			"MerchantBuyPrice": "CantBuyThat",
 			"Merchant": "None /:",
-			"NormalName": "ENCHANTED_PACKED_ICE",
-			"SpecialCase":"17.78"
+			"NormalName": "ENCHANTED_PACKED_ICE"
 
 		},
 			"netherrack": {

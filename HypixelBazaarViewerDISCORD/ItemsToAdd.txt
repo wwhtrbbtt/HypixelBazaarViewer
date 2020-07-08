@@ -1,1 +1,7 @@
 Items that you (or me, flimmerkraft) have to add to the JSON file.
+You have to add: enchanted lapis.
+You have to add: enchanted glistening melon.
+You have to add: iron.
+You have to add: gold.
+You have to add: lapis.
+You have to add: glowstone.
