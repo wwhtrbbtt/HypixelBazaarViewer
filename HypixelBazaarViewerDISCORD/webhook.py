@@ -1,4 +1,4 @@
-url = "https://discordapp.com/api/webhooks/716722593457242123/GyoS587uBLbY5bEJEn-674HVK5egSm2gv5IzUubThzKC0I1CSoT6LZIoMqJiexQQRZHw"
+url = "<your-webhook>"
 
 from discord_webhook import DiscordWebhook, DiscordEmbed
 import sys
