@@ -1,48 +1,35 @@
-global sortedtoplist
-import json
-import requests
 from natsort import humansorted
 import sys
 from SmallDefs import *
-
 sys.path.insert(1, 'Modules')
-
-NPCPrices = NPCPrices()
-
+Items = AllItems()
 def PriceDifference():
+    print("answered to $pricedifference")
     JSON = JSONData()
     toplist = []
          
-    for x in (NPCPrices["productIds"]):          
-        Product = x
-       
-        readableName = Product
-        Product = (NPCPrices["productIds"][Product]["NormalName"])
-
+    for x in Items["items"]:          
+        Product = x["Name"]
+        readableName = x["CleanName"]
+        try:
         #BAZAAR PRICES
-        buyPrice = JSON[Product]['quick_status']['buyPrice']
-        sellPrice = JSON[Product]['quick_status']['sellPrice']
-        buyVolume = JSON[Product]['quick_status']['buyVolume']
-        sellVolume = JSON[Product]['quick_status']['sellVolume']
+            buyPrice = JSON[Product]['buy_summary'][0]["pricePerUnit"]
+            sellPrice = JSON[Product]['sell_summary'][0]["pricePerUnit"]
+            buyVolume = JSON[Product]['quick_status']['buyVolume']
+            sellVolume = JSON[Product]['quick_status']['sellVolume']
+        except:
+            xyz = 0
         #round up the prices
         rSellPrice = round(sellPrice, 2)
         rBuyPrice = round(buyPrice, 2)
         #make the prices to string
         frSellPrice = str(rSellPrice)  # float -> str
         frBuyPrice = str(rBuyPrice)  # float -> str
-
         #how big is the absolut difference?
         Increase = buyPrice - sellPrice
-
-        
         rIncrease = round(Increase, 2)
         strIncrease = str(rIncrease) # 1
-
-        #%difference
-
         Difference = percent(sellPrice, buyPrice)
-
-
         rDifference = round(Difference)
         strDifference = str(rDifference)
 
@@ -52,7 +39,7 @@ def PriceDifference():
         #storing the difference and the product
         if Difference > 0:
             #add the value to a list
-            toplist.append("There is a " + strDifference + "% difference between the sell and buy price of **" + readableName + "**, or " + strIncrease + "$ *(BuyVolume: " + strBuyVolume + " SellVolume: " + strSellVolume + ")*.")      
+            toplist.append("*("+PrettyNumbers(Difference)+"% difference)* You make a buy-offer for 1 **" + readableName + "**, and when its filled, you make a sell-offer. \nThis makes $" + strIncrease + "!\n=======\n*(BuyVolume: " + strBuyVolume + " SellVolume: " + strSellVolume + " buy price: " + frBuyPrice + " sell price: " + frSellPrice + ")*.")      
 
 
     sortedtoplist = humansorted(toplist)

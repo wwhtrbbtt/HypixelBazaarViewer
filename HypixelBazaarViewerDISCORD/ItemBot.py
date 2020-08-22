@@ -1,6 +1,4 @@
-DiscordBotToken = "NzA1MTQ4MDI4ODYzOTA1OTAy.XvZojQ.JAEPDwdoiOmFIXXys0Q95r6q7X8" #    <--- Your Discord Bot token.
-
-global sortedtoplist
+DiscordBotToken = "<bot-token-here>" #    <--- Your Discord Bot token.
 
 ##############################################
 
@@ -13,6 +11,16 @@ import subprocess
 import os
 sys.path.insert(1, 'Modules')
 
+from os import system, name 
+# for windows 
+if name == 'nt': 
+    _ = system('cls') 
+# for mac and linux(here, os.name is 'posix') 
+else: 
+    _ = system('clear') 
+    
+    
+
 #########   modules
 from eFlip import eFlip
 from BestLog import BestLogs
@@ -20,14 +28,10 @@ from MerchantFlip import MerchantFlip
 from ReverseFlip import ReverseFlip
 from PriceDifference import PriceDifference
 from flip import flip
-#from NewNotify import NewNotify
 from SmallDefs import *
 from formular import Score
 from watchdog import Watchdog
 
-print(os.path.dirname(os.path.realpath(__file__)))
-print("==============")
-os.system("cd Modules/ && python3 /Modules/CheckingProducts.py")
 
 client = discord.Client()
 
@@ -59,18 +63,10 @@ async def on_message(message):
         embed = discord.Embed(title="$flip " + Product, color=color)
         embed.set_author(name="BazaarViewer", icon_url="https://cdn.discordapp.com/attachments/703719065977487390/708392264086585364/yeeeeeeeeee.png")
         
-        try:
-            embed.add_field(name="1:", value=Send[0], inline=False)
-            try:
-                embed.add_field(name="2:", value=Send[1], inline=False)
-                try:
-                    embed.add_field(name="3:", value=Send[2], inline=False)
-                except:
-                    a = 0
-            except:
-                a = 0
-        except:
-            a = 0
+        i = 0
+        for x in Send:
+            embed.add_field(name="#"+str(i + 1) +":", value=Send[i], inline=False)
+            i += 1
         strColor = str(color)
         embed.set_footer(text="Color: " + strColor)
         await message.channel.send(embed=embed)    
@@ -104,11 +100,12 @@ async def on_message(message):
         color = random.randint(0, 0xffffff)
         embed = discord.Embed(title="How much can you make?", color=color)
         embed.set_author(name="BazaarViewer", icon_url="https://cdn.discordapp.com/attachments/703719065977487390/708392264086585364/yeeeeeeeeee.png")
-        embed.add_field(name="#1:", value=sortedtoplist[0], inline=False)
-        embed.add_field(name="#2:", value=sortedtoplist[1], inline=False)
-        embed.add_field(name="#3:", value=sortedtoplist[2], inline=False)
-        embed.add_field(name="#4:", value=sortedtoplist[3], inline=False)
-        embed.add_field(name="#5:", value=sortedtoplist[4], inline=False)
+        i = 0
+        for x in sortedtoplist:
+            embed.add_field(name="#"+str(i + 1) +":", value=sortedtoplist[i], inline=False)
+            i += 1
+            if i == 4:
+                break
         strColor = str(color)
         embed.set_footer(text="Color: " + strColor)
         await message.channel.send(embed=embed)
@@ -160,16 +157,16 @@ async def on_message(message):
 
         print("replied to a message!")
         sortedtoplist = ReverseFlip()
-        a = 1
-        b = 0
         color = random.randint(0, 0xffffff)
         embed = discord.Embed(title="Gettin that cash", color=color)
         embed.set_author(name="BazaarViewer", icon_url="https://cdn.discordapp.com/attachments/703719065977487390/708392264086585364/yeeeeeeeeee.png")
+        i = 0
         for x in sortedtoplist:
-            c = str(a)
-            embed.add_field(name="#" + c + ":", value=sortedtoplist[b], inline=False)
-            a = a + 1
-            b = b + 1
+            embed.add_field(name="#" + str(i+1)+ ":", value=sortedtoplist[i], inline=False)
+            if i == 4:
+                break
+            i += 1
+            
         await message.channel.send(embed=embed)
      
     elif message.content.startswith('$bestlog'):
@@ -180,12 +177,10 @@ async def on_message(message):
         color = random.randint(0, 0xffffff)
         embed = discord.Embed(title="For how much can you sell each log?", description="You can sell every log for 2$ to the NPC.", color=color)
         embed.set_author(name="BazaarViewer", icon_url="https://cdn.discordapp.com/attachments/703719065977487390/708392264086585364/yeeeeeeeeee.png")
-        embed.add_field(name="#1:", value=sortedtoplist[0], inline=False)
-        embed.add_field(name="#2:", value=sortedtoplist[1], inline=False)
-        embed.add_field(name="#3:", value=sortedtoplist[2], inline=False)
-        embed.add_field(name="#4:", value=sortedtoplist[3], inline=False)
-        embed.add_field(name="#5:", value=sortedtoplist[4], inline=False)
-        embed.add_field(name="#6:", value=sortedtoplist[5], inline=False)
+        i = 0
+        for x in sortedtoplist:
+            embed.add_field(name="#"+str(i + 1) +":", value=sortedtoplist[i], inline=False)
+            i += 1
         strColor = str(color)
         embed.set_footer(text="Color: " + strColor)
         await message.channel.send(embed=embed)
@@ -197,11 +192,12 @@ async def on_message(message):
         color = random.randint(0, 0xffffff)
         embed = discord.Embed(title="Dont lose your money!", color=color)
         embed.set_author(name="BazaarViewer", icon_url="https://cdn.discordapp.com/attachments/703719065977487390/708392264086585364/yeeeeeeeeee.png")
-        embed.add_field(name="#1:", value="There is a " + sortedtoplist[0], inline=False)
-        embed.add_field(name="#2:", value="There is a " + sortedtoplist[1], inline=False)
-        embed.add_field(name="#3:", value="There is a " + sortedtoplist[2], inline=False)
-        embed.add_field(name="#4:", value="There is a " + sortedtoplist[3], inline=False)
-        embed.add_field(name="#5:", value="There is a " + sortedtoplist[4], inline=False)
+        i = 0
+        for x in sortedtoplist:
+            embed.add_field(name="#"+str(i + 1) +":", value=sortedtoplist[i], inline=False)
+            if i == 4:
+                break
+            i += 1
         strColor = str(color)
         embed.set_footer(text="Color: " + strColor)
         await message.channel.send(embed=embed)
@@ -216,11 +212,10 @@ async def on_message(message):
         color = random.randint(0, 0xffffff)
         embed = discord.Embed(title="Gettin that cash", color=color)
         embed.set_author(name="BazaarViewer", icon_url="https://cdn.discordapp.com/attachments/703719065977487390/708392264086585364/yeeeeeeeeee.png")
+        i = 0
         for x in sortedtoplist:
-            c = str(a)
-            embed.add_field(name="#" + c + ":", value=sortedtoplist[b], inline=False)
-            a = a + 1
-            b = b + 1
+            embed.add_field(name="#"+str(i + 1) +":", value=sortedtoplist[i], inline=False)
+            i += 1
         member = message.author
         channel = await member.create_dm()
         strColor = str(color)
@@ -262,33 +257,24 @@ async def on_message(message):
             else:
                 await message.channel.send("ERROR: Please just say buy or sell.")
 
-        #
-            #     await message.channel.send("ERROR: Please just enter a number.")
-            
     elif message.content.startswith('$skyscore'):
         sortedtoplist = Score()
         color = random.randint(0, 0xffffff)
         embed = discord.Embed(title="Double check everything, still beta", color=color)
         embed.set_author(name="BazaarViewer", icon_url="https://cdn.discordapp.com/attachments/703719065977487390/708392264086585364/yeeeeeeeeee.png")
-        embed.add_field(name="#1:", value=sortedtoplist[0], inline=False)
-        embed.add_field(name="#2:", value=sortedtoplist[1], inline=False)
-        embed.add_field(name="#3:", value=sortedtoplist[2], inline=False)
-        embed.add_field(name="#4:", value=sortedtoplist[3], inline=False)
-        embed.add_field(name="#5:", value=sortedtoplist[4], inline=False)
+        i = 0
+        for x in sortedtoplist:
+            embed.add_field(name="#"+str(i + 1) +":", value=sortedtoplist[i], inline=False)
+            if i == 4:
+                break
+            i += 1
         strColor = str(color)
         embed.set_footer(text="Color: " + strColor)
         await message.channel.send(embed=embed)
 
- #   elif message.content.startswith('$giveaway'):
- #       RanMember = random.choice(message.channel.guild.members).mention
- #       await message.channel.send(str(RanMember) + " you won! If you dont answer in 24h, we will pick another user.")
-
     elif message.content.startswith('$watchdog'):
         await message.channel.send(Watchdog())
 
-
-   # elif message.content.startswith('$minioncalculator'):
-    #    MinionCalc()
 
 
 

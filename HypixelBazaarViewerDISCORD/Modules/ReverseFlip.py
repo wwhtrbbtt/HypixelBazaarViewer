@@ -1,15 +1,10 @@
-global sortedtoplist
-import json
-import requests
 from natsort import humansorted
 import sys
 from SmallDefs import *
-
 sys.path.insert(1, 'Modules')
-
 NPCPrices = NPCPrices()
-
 def ReverseFlip():
+    
     JSON = JSONData()
     toplist = []
     #LOOP THROUGH ALL PRODUCTS
@@ -23,7 +18,7 @@ def ReverseFlip():
         except KeyError as ke:
             a = 0
         try:
-            buyPrice = float(JSON[Product]['quick_status']['buyPrice'])
+            buyPrice = float(JSON[Product]['buy_summary'][0]["pricePerUnit"])
         except:
             a = 0
 
@@ -32,7 +27,7 @@ def ReverseFlip():
             Profit = sellPrice - buyPrice
             rProfit = round(Profit, 2)
             strProfit = str(rProfit)
-            toplist.append("You can make " + strProfit + "$ by selling **" + NormalPName + "** to a NPC, after you bought it at the bazaar.")
+            toplist.append("You can make " + strProfit + "$ by selling **" + NormalPName + "** to a NPC, after you made a buy order at the bazaar.")
 
         else:
             a = 0

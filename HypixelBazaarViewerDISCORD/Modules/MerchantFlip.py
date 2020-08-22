@@ -1,16 +1,10 @@
-
-global sortedtoplist
-import json
-import requests
 from natsort import humansorted
 import sys
 from SmallDefs import *
-
 sys.path.insert(1, 'Modules')
-
 NPCPrices = NPCPrices()
-
 def MerchantFlip():
+
     JSON = JSONData()
     #print("working!")
     

@@ -4,33 +4,37 @@ from natsort import humansorted
 from SmallDefs import *
 import json
 
-NPCPrices = NPCPrices()
+Items = AllItems()
 
 def Score():
+    print("answered to $skyscore")
     toplist = []
     JSON = JSONData()
-    for Product in (NPCPrices["productIds"]):
-        
-        x = (NPCPrices["productIds"][Product]["NormalName"])
-
-        
-        buyVolume = JSON[x]["quick_status"]["buyVolume"]
-        sellVolume = JSON[x]["quick_status"]["sellVolume"]
-        buyPrice = JSON[x]["quick_status"]["buyPrice"]
-        sellPrice = JSON[x]["quick_status"]["sellPrice"]
+    for x in Items["items"]: 
+        readableName = x["CleanName"]
+        x = x["Name"]
+        try:
+            buyVolume = JSON[x]["quick_status"]["buyVolume"]
+            sellVolume = JSON[x]["quick_status"]["sellVolume"]
+            buyPrice = JSON[x]['buy_summary'][0]["pricePerUnit"]
+            sellPrice = JSON[x]['sell_summary'][0]["pricePerUnit"]
+        except:
+            xyz = 0
         if sellPrice == 0:
             print()
         else:
             #Diff = (buyPrice - sellPrice)*2
-            Diff = percent(sellPrice, buyPrice)/100
-            buyScore = buyVolume/10000
-            sellScore = sellVolume/10000
-            SBScore = (sellScore + buyScore)
+            Diff = percent(sellPrice, buyPrice) / 8
+            RAWDiff = buyPrice - sellPrice
 
-
-            Score = (SBScore + Diff) / 10
+            buyScore = buyVolume/50000
+            sellScore = sellVolume/50000
+            SBScore = (sellScore * buyScore)/200
+            
+            Score = (Diff + SBScore) / 2
             #if Diff > 0 and Score > 0:
-            toplist.append("The score is " + str(round(Score)) + " from the poduct: **" + Product + "**. *(Buy price: " + str(round(buyPrice)) + ". Sell price: " + str(round(sellPrice)) + ". Buy volume: " + PrettyNumbers(buyVolume) + " Sell volume: " + PrettyNumbers(sellVolume) + ")*")
+            toplist.append("The score is " + str(round(Score)) + " from the poduct: **" + readableName + "**. *(Buy price: " + str(round(buyPrice, 1)) + ". Sell price: " + str(round(sellPrice, 1)) + ". Buy volume: " + PrettyNumbers(buyVolume) + " Sell volume: " + PrettyNumbers(sellVolume) + ", Diff: " + str(round(RAWDiff)) + ")*")
+
 
     sortedtoplist = humansorted(toplist)
     sortedtoplist.reverse()

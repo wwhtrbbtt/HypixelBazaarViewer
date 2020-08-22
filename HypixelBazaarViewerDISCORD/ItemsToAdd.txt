@@ -5,3 +5,4 @@ You have to add: iron.
 You have to add: gold.
 You have to add: lapis.
 You have to add: glowstone.
+You have to add: enchanted lava bucket.

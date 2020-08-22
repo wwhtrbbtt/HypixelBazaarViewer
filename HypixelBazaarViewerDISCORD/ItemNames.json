@@ -1,0 +1,642 @@
+{
+    "items": [
+        {
+            "Name": "BROWN_MUSHROOM",
+            "CleanName": "Brown Mushroom"
+        },
+        {
+            "Name": "INK_SACK:3",
+            "CleanName": "Cocoa Beans"
+        },
+        {
+            "Name": "INK_SACK:4",
+            "CleanName": "Lapis Lazuli"
+        },
+        {
+            "Name": "TARANTULA_WEB",
+            "CleanName": "Tarantula Web"
+        },
+        {
+            "Name": "CARROT_ITEM",
+            "CleanName": "Carrot"
+        },
+        {
+            "Name": "ENCHANTED_POTATO",
+            "CleanName": "Enchanted Potato"
+        },
+        {
+            "Name": "ENCHANTED_SLIME_BALL",
+            "CleanName": "Enchanted Slimeball"
+        },
+        {
+            "Name": "ENCHANTED_RED_MUSHROOM",
+            "CleanName": "Enchanted Red Mushroom"
+        },
+        {
+            "Name": "ENCHANTED_GOLDEN_CARROT",
+            "CleanName": "Enchanted Golden Carrot"
+        },
+        {
+            "Name": "ENCHANTED_RABBIT_HIDE",
+            "CleanName": "Enchanted Rabbit Hide"
+        },
+        {
+            "Name": "ENCHANTED_BIRCH_LOG",
+            "CleanName": "Enchanted Birch Wood"
+        },
+        {
+            "Name": "ENCHANTED_GUNPOWDER",
+            "CleanName": "Enchanted Gunpowder"
+        },
+        {
+            "Name": "ENCHANTED_MELON",
+            "CleanName": "Enchanted Melon"
+        },
+        {
+            "Name": "ENCHANTED_SUGAR",
+            "CleanName": "Enchanted Sugar"
+        },
+        {
+            "Name": "CACTUS",
+            "CleanName": "Cactus"
+        },
+        {
+            "Name": "ENCHANTED_BLAZE_ROD",
+            "CleanName": "Enchanted Blaze Rod"
+        },
+        {
+            "Name": "ENCHANTED_CAKE",
+            "CleanName": "Enchanted Cake"
+        },
+        {
+            "Name": "PUMPKIN",
+            "CleanName": "Pumpkin"
+        },
+        {
+            "Name": "ENCHANTED_BROWN_MUSHROOM",
+            "CleanName": "Enchanted Brown Mushroom"
+        },
+        {
+            "Name": "WHEAT",
+            "CleanName": "Wheat"
+        },
+        {
+            "Name": "ENCHANTED_RAW_SALMON",
+            "CleanName": "Enchanted Raw Salmon"
+        },
+        {
+            "Name": "ENCHANTED_GLISTERING_MELON",
+            "CleanName": "Enchanted Glistering Melon"
+        },
+        {
+            "Name": "PRISMARINE_SHARD",
+            "CleanName": "Prismarine Shard"
+        },
+        {
+            "Name": "ENCHANTED_EMERALD",
+            "CleanName": "Enchanted Emerald"
+        },
+        {
+            "Name": "PROTECTOR_FRAGMENT",
+            "CleanName": "Protector Dragon Fragment"
+        },
+        {
+            "Name": "ENCHANTED_SPIDER_EYE",
+            "CleanName": "Enchanted Spider Eye"
+        },
+        {
+            "Name": "RED_MUSHROOM",
+            "CleanName": "Red Mushroom"
+        },
+        {
+            "Name": "ENCHANTED_MELON_BLOCK",
+            "CleanName": "Enchanted Melon Block"
+        },
+        {
+            "Name": "MUTTON",
+            "CleanName": "Mutton"
+        },
+        {
+            "Name": "WISE_FRAGMENT",
+            "CleanName": "Wise Dragon Fragment"
+        },
+        {
+            "Name": "DIAMOND",
+            "CleanName": "Diamond"
+        },
+        {
+            "Name": "COBBLESTONE",
+            "CleanName": "Cobblestone"
+        },
+        {
+            "Name": "RAW_FISH",
+            "CleanName": "Raw Fish"
+        },
+        {
+            "Name": "SPIDER_EYE",
+            "CleanName": "Spider Eye"
+        },
+        {
+            "Name": "ENCHANTED_PUFFERFISH",
+            "CleanName": "Enchanted Pufferfish"
+        },
+        {
+            "Name": "POTATO_ITEM",
+            "CleanName": "Potato"
+        },
+        {
+            "Name": "ENCHANTED_HUGE_MUSHROOM_1",
+            "CleanName": "Enchanted Brown Mushroom Block"
+        },
+        {
+            "Name": "ENCHANTED_COBBLESTONE",
+            "CleanName": "Enchanted Cobblestone"
+        },
+        {
+            "Name": "ENCHANTED_HUGE_MUSHROOM_2",
+            "CleanName": "Enchanted Red Mushroom Block"
+        },
+        {
+            "Name": "PORK",
+            "CleanName": "Raw Porkchop"
+        },
+        {
+            "Name": "PRISMARINE_CRYSTALS",
+            "CleanName": "Prismarine Crystals"
+        },
+        {
+            "Name": "ICE",
+            "CleanName": "Ice"
+        },
+        {
+            "Name": "HUGE_MUSHROOM_1",
+            "CleanName": "Brown Mushroom Block"
+        },
+        {
+            "Name": "HUGE_MUSHROOM_2",
+            "CleanName": "Red Mushroom Block"
+        },
+        {
+            "Name": "ICE_BAIT",
+            "CleanName": "Ice Bait"
+        },
+        {
+            "Name": "LOG_2:1",
+            "CleanName": "Dark Oak Wood"
+        },
+        {
+            "Name": "ENCHANTED_SNOW_BLOCK",
+            "CleanName": "Enchanted Snow Block"
+        },
+        {
+            "Name": "STRING",
+            "CleanName": "String"
+        },
+        {
+            "Name": "GOLDEN_TOOTH",
+            "CleanName": "Golden Tooth"
+        },
+        {
+            "Name": "RABBIT_FOOT",
+            "CleanName": "Rabbit's Foot"
+        },
+        {
+            "Name": "REDSTONE",
+            "CleanName": "Redstone"
+        },
+        {
+            "Name": "ENCHANTED_CACTUS_GREEN",
+            "CleanName": "Enchanted Cactus Green"
+        },
+        {
+            "Name": "ENCHANTED_ENDSTONE",
+            "CleanName": "Enchanted End Stone"
+        },
+        {
+            "Name": "ENCHANTED_LAPIS_LAZULI_BLOCK",
+            "CleanName": "Enchanted Lapis Block"
+        },
+        {
+            "Name": "ENCHANTED_COOKIE",
+            "CleanName": "Enchanted Cookie"
+        },
+        {
+            "Name": "ENCHANTED_SAND",
+            "CleanName": "Enchanted Sand"
+        },
+        {
+            "Name": "ENCHANTED_STRING",
+            "CleanName": "Enchanted String"
+        },
+        {
+            "Name": "STRONG_FRAGMENT",
+            "CleanName": "Strong Dragon Fragment"
+        },
+        {
+            "Name": "SLIME_BALL",
+            "CleanName": "Slimeball"
+        },
+        {
+            "Name": "SNOW_BALL",
+            "CleanName": "Snowball"
+        },
+        {
+            "Name": "ENCHANTED_ACACIA_LOG",
+            "CleanName": "Enchanted Acacia Wood"
+        },
+        {
+            "Name": "ENCHANTED_EGG",
+            "CleanName": "Enchanted Egg"
+        },
+        {
+            "Name": "SAND",
+            "CleanName": "Sand"
+        },
+        {
+            "Name": "RAW_CHICKEN",
+            "CleanName": "Raw Chicken"
+        },
+        {
+            "Name": "ENCHANTED_GHAST_TEAR",
+            "CleanName": "Enchanted Ghast Tear"
+        },
+        {
+            "Name": "ENCHANTED_LAPIS_LAZULI",
+            "CleanName": "Enchanted Lapis Lazuli"
+        },
+        {
+            "Name": "ENCHANTED_COCOA",
+            "CleanName": "Enchanted Cocoa Bean"
+        },
+        {
+            "Name": "CARROT_BAIT",
+            "CleanName": "Carrot Bait"
+        },
+        {
+            "Name": "SEEDS",
+            "CleanName": "Seeds"
+        },
+        {
+            "Name": "ENCHANTED_LEATHER",
+            "CleanName": "Enchanted Leather"
+        },
+        {
+            "Name": "ENCHANTED_SPONGE",
+            "CleanName": "Enchanted Sponge"
+        },
+        {
+            "Name": "HAY_BLOCK",
+            "CleanName": "Hay Bale"
+        },
+        {
+            "Name": "INK_SACK",
+            "CleanName": "Ink Sack"
+        },
+        {
+            "Name": "FLINT",
+            "CleanName": "Flint"
+        },
+        {
+            "Name": "ENCHANTED_ROTTEN_FLESH",
+            "CleanName": "Enchanted Rotten Flesh"
+        },
+        {
+            "Name": "ENCHANTED_SPRUCE_LOG",
+            "CleanName": "Enchanted Spruce Wood"
+        },
+        {
+            "Name": "WOLF_TOOTH",
+            "CleanName": "Wolf Tooth"
+        },
+        {
+            "Name": "ENCHANTED_GRILLED_PORK",
+            "CleanName": "Enchanted Grilled Pork"
+        },
+        {
+            "Name": "ENCHANTED_NETHER_STALK",
+            "CleanName": "Enchanted Nether Wart"
+        },
+        {
+            "Name": "ENCHANTED_REDSTONE_BLOCK",
+            "CleanName": "Enchanted Redstone Block"
+        },
+        {
+            "Name": "ENCHANTED_QUARTZ_BLOCK",
+            "CleanName": "Enchanted Quartz Block"
+        },
+        {
+            "Name": "GREEN_CANDY",
+            "CleanName": "Green Candy"
+        },
+        {
+            "Name": "ENCHANTED_REDSTONE",
+            "CleanName": "Enchanted Redstone"
+        },
+        {
+            "Name": "ENCHANTED_REDSTONE_LAMP",
+            "CleanName": "Enchanted Redstone Lamp"
+        },
+        {
+            "Name": "GRAVEL",
+            "CleanName": "Gravel"
+        },
+        {
+            "Name": "MELON",
+            "CleanName": "Melon"
+        },
+        {
+            "Name": "ENCHANTED_PACKED_ICE",
+            "CleanName": "Enchanted Packed Ice"
+        },
+        {
+            "Name": "ENCHANTED_LAVA_BUCKET",
+            "CleanName": "Enchanted Lava Bucket"
+        },
+        {
+            "Name": "RAW_FISH:3",
+            "CleanName": "Pufferfish"
+        },
+        {
+            "Name": "ENCHANTED_PRISMARINE_SHARD",
+            "CleanName": "Enchanted Prismarine Shard"
+        },
+        {
+            "Name": "ENCHANTED_IRON_BLOCK",
+            "CleanName": "Enchanted Iron Block"
+        },
+        {
+            "Name": "ENCHANTED_CARROT_STICK",
+            "CleanName": "Enchanted Carrot on a Stick"
+        },
+        {
+            "Name": "BONE",
+            "CleanName": "Bone"
+        },
+        {
+            "Name": "RAW_FISH:2",
+            "CleanName": "Clownfish"
+        },
+        {
+            "Name": "RAW_FISH:1",
+            "CleanName": "Raw Salmon"
+        },
+        {
+            "Name": "REVENANT_FLESH",
+            "CleanName": "Revenant Flesh"
+        },
+        {
+            "Name": "ENCHANTED_GLOWSTONE",
+            "CleanName": "Enchanted Glowstone"
+        },
+        {
+            "Name": "ENCHANTED_PORK",
+            "CleanName": "Enchanted Pork"
+        },
+        {
+            "Name": "FEATHER",
+            "CleanName": "Feather"
+        },
+        {
+            "Name": "NETHERRACK",
+            "CleanName": "Netherrack"
+        },
+        {
+            "Name": "WHALE_BAIT",
+            "CleanName": "Whale Bait"
+        },
+        {
+            "Name": "SPONGE",
+            "CleanName": "Sponge"
+        },
+        {
+            "Name": "BLAZE_ROD",
+            "CleanName": "Blaze Rod"
+        },
+        {
+            "Name": "ENCHANTED_DARK_OAK_LOG",
+            "CleanName": "Enchanted Dark Oak Wood"
+        },
+        {
+            "Name": "YOUNG_FRAGMENT",
+            "CleanName": "Young Dragon Fragment"
+        },
+        {
+            "Name": "ENCHANTED_CLOWNFISH",
+            "CleanName": "Enchanted Clownfish"
+        },
+        {
+            "Name": "ENCHANTED_GOLD",
+            "CleanName": "Enchanted Gold"
+        },
+        {
+            "Name": "ENCHANTED_RAW_CHICKEN",
+            "CleanName": "Enchanted Raw Chicken"
+        },
+        {
+            "Name": "ENCHANTED_WATER_LILY",
+            "CleanName": "Enchanted Lily Pad"
+        },
+        {
+            "Name": "LOG:1",
+            "CleanName": "Spruce Wood"
+        },
+        {
+            "Name": "LOG:3",
+            "CleanName": "Jungle Wood"
+        },
+        {
+            "Name": "LOG:2",
+            "CleanName": "Birch Wood"
+        },
+        {
+            "Name": "BLESSED_BAIT",
+            "CleanName": "Blessed Bait"
+        },
+        {
+            "Name": "ENCHANTED_GLOWSTONE_DUST",
+            "CleanName": "Enchanted Glowstone Dust"
+        },
+        {
+            "Name": "ENCHANTED_INK_SACK",
+            "CleanName": "Enchanted Ink Sack"
+        },
+        {
+            "Name": "ENCHANTED_CACTUS",
+            "CleanName": "Enchanted Cactus"
+        },
+        {
+            "Name": "ENCHANTED_SUGAR_CANE",
+            "CleanName": "Enchanted Sugar Cane"
+        },
+        {
+            "Name": "ENCHANTED_COOKED_SALMON",
+            "CleanName": "Enchanted Cooked Salmon"
+        },
+        {
+            "Name": "ENCHANTED_SEEDS",
+            "CleanName": "Enchanted Seeds"
+        },
+        {
+            "Name": "LOG",
+            "CleanName": "Oak Wood"
+        },
+        {
+            "Name": "GHAST_TEAR",
+            "CleanName": "Ghast Tear"
+        },
+        {
+            "Name": "ENCHANTED_ENDER_PEARL",
+            "CleanName": "Enchanted Ender Pearl"
+        },
+        {
+            "Name": "UNSTABLE_FRAGMENT",
+            "CleanName": "Unstable Dragon Fragment"
+        },
+        {
+            "Name": "PURPLE_CANDY",
+            "CleanName": "Purple Candy"
+        },
+        {
+            "Name": "ENCHANTED_FERMENTED_SPIDER_EYE",
+            "CleanName": "Enchanted Fermented Spider Eye"
+        },
+        {
+            "Name": "SPIKED_BAIT",
+            "CleanName": "Spiked Bait"
+        },
+        {
+            "Name": "ENCHANTED_GOLD_BLOCK",
+            "CleanName": "Enchanted Gold Block"
+        },
+        {
+            "Name": "ENCHANTED_JUNGLE_LOG",
+            "CleanName": "Enchanted Jungle Wood"
+        },
+        {
+            "Name": "ENCHANTED_FLINT",
+            "CleanName": "Enchanted Flint"
+        },
+        {
+            "Name": "IRON_INGOT",
+            "CleanName": "Iron Ingot"
+        },
+        {
+            "Name": "ENCHANTED_EMERALD_BLOCK",
+            "CleanName": "Enchanted Emerald Block"
+        },
+        {
+            "Name": "ENCHANTED_CLAY_BALL",
+            "CleanName": "Enchanted Clay"
+        },
+        {
+            "Name": "GLOWSTONE_DUST",
+            "CleanName": "Glowstone Dust"
+        },
+        {
+            "Name": "GOLD_INGOT",
+            "CleanName": "Gold Ingot"
+        },
+        {
+            "Name": "REVENANT_VISCERA",
+            "CleanName": "Revenant Viscera"
+        },
+        {
+            "Name": "TARANTULA_SILK",
+            "CleanName": "Tarantula Silk"
+        },
+        {
+            "Name": "ENCHANTED_MUTTON",
+            "CleanName": "Enchanted Mutton"
+        },
+        {
+            "Name": "SUPER_COMPACTOR_3000",
+            "CleanName": "Super Compactor 3000"
+        },
+        {
+            "Name": "SUPER_EGG",
+            "CleanName": "Super Enchanted Egg"
+        },
+        {
+            "Name": "ENCHANTED_IRON",
+            "CleanName": "Enchanted Iron"
+        },
+        {
+            "Name": "STOCK_OF_STONKS",
+            "CleanName": "Stock of Stonks"
+        },
+        {
+            "Name": "ENCHANTED_HAY_BLOCK",
+            "CleanName": "Enchanted Hay Bale"
+        },
+        {
+            "Name": "ENCHANTED_BONE",
+            "CleanName": "Enchanted Bone"
+        },
+        {
+            "Name": "ENCHANTED_PAPER",
+            "CleanName": "Enchanted Paper"
+        },
+        {
+            "Name": "ENCHANTED_DIAMOND_BLOCK",
+            "CleanName": "Enchanted Diamond Block"
+        },
+        {
+            "Name": "SPOOKY_BAIT",
+            "CleanName": "Spooky Bait"
+        },
+        {
+            "Name": "SUPERIOR_FRAGMENT",
+            "CleanName": "Superior Dragon Fragment"
+        },
+        {
+            "Name": "EMERALD",
+            "CleanName": "Emerald"
+        },
+        {
+            "Name": "ENCHANTED_RABBIT_FOOT",
+            "CleanName": "Enchanted Rabbit Foot"
+        },
+        {
+            "Name": "LIGHT_BAIT",
+            "CleanName": "Light Bait"
+        },
+        {
+            "Name": "HOT_POTATO_BOOK",
+            "CleanName": "Hot Potato Book"
+        },
+        {
+            "Name": "ENCHANTED_ICE",
+            "CleanName": "Enchanted Ice"
+        },
+        {
+            "Name": "CLAY_BALL",
+            "CleanName": "Clay"
+        },
+        {
+            "Name": "OLD_FRAGMENT",
+            "CleanName": "Old Dragon Fragment"
+        },
+        {
+            "Name": "GREEN_GIFT",
+            "CleanName": "Green Gift"
+        },
+        {
+            "Name": "PACKED_ICE",
+            "CleanName": "Packed Ice"
+        },
+        {
+            "Name": "WATER_LILY",
+            "CleanName": "Lily Pad"
+        },
+        {
+            "Name": "HAMSTER_WHEEL",
+            "CleanName": "Hamster Wheel"
+        },
+        {
+            "Name": "LOG_2",
+            "CleanName": "Acacia Wood"
+        }
+
+        ]
+    }
+    
